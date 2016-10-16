@@ -1446,7 +1446,7 @@ void sniff(u_char* arg, const struct pcap_pkthdr* hdr, const u_char* packet)
 {
 	/* packet structs */
     dprint("Joubin");
-    dprint(packet);
+    dprint("%X", &packet);
 	struct ether_header* eth = NULL;
 	struct ip* ip = NULL;
 	struct tcphdr* tcp = NULL;
