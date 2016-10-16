@@ -1521,7 +1521,7 @@ void sniff(u_char* arg, const struct pcap_pkthdr* hdr, const u_char* packet)
 	strncpy(dstIP, inet_ntoa(inaddr), sizeof(dstIP)-1);
 	dstIP[sizeof(dstIP)-1] = '\0';
 
-	dprint("%s %s: %s: %s:%d -> %s:%d %d bytes\n", pkt_date, pkt_time,
+	dprint("fart: %s %s: %s: %s:%d -> %s:%d %d bytes\n", pkt_date, pkt_time,
 			proto, srcIP, sport, dstIP, dport, hdr->len);
 
 	/* clean up expired/completed/failed attempts */
